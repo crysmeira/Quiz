@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">Supernatural Quiz</string>
+    <string name="welcome">Welcome to the Supernatural Quiz!</string>
+    <string name="message">Let\'s see how many questions you can answer properly.</string>
+    <string name="start">Start</string>
+    <string name="question1">Which college did Sam attend?</string>
+    <string name="stanford">Stanford</string>
+    <string name="berkeley">Berkeley</string>
+    <string name="harvard">Harvard</string>
+    <string name="yale">Yale</string>
+    <string name="princeton">Princeton</string>
+    <string name="question2">What is the name of Sam\'s girlfriend when he is at College?</string>
+    <string name="lisa">Lisa</string>
+    <string name="ruby">Ruby</string>
+    <string name="jessica">Jessica</string>
+    <string name="abbie">Abbie</string>
+    <string name="carol">Carol</string>
+    <string name="next">Next</string>
 </resources>
