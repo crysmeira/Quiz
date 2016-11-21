@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by crystiane on 11/18/16.
  */
 
-public class Question3 extends AppCompatActivity {
+public class Question4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class Question3 extends AppCompatActivity {
 
         // Set the question
         TextView question = (TextView) findViewById(R.id.tv_question);
-        question.setText(R.string.question3);
+        question.setText(R.string.question4);
 
         // Set the options
         ArrayList<Integer> textViews = new ArrayList<>();
@@ -34,11 +34,11 @@ public class Question3 extends AppCompatActivity {
         textViews.add(R.id.option5);
 
         ArrayList<Integer> options = new ArrayList<>();
-        options.add(R.string.paranoid);
-        options.add(R.string.peace_of_mind);
-        options.add(R.string.anthem);
-        options.add(R.string.carryon);
-        options.add(R.string.fight);
+        options.add(R.string.phoenix);
+        options.add(R.string.lawrence);
+        options.add(R.string.stlouis);
+        options.add(R.string.austin);
+        options.add(R.string.new_orleans);
 
         for (int i = 0; i < textViews.size(); i++) {
             TextView op = (TextView) findViewById(textViews.get(i));
@@ -47,7 +47,7 @@ public class Question3 extends AppCompatActivity {
             op.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (index == 3) {
+                    if (index == 1) {
                         callNext(points + 1);
                     } else {
                         callNext(points);
@@ -58,7 +58,7 @@ public class Question3 extends AppCompatActivity {
     }
 
     private void callNext(int points) {
-        Intent intent = new Intent(Question3.this, Question4.class);
+        Intent intent = new Intent(Question4.this, Question5.class);
         intent.putExtra("points", points);
         startActivity(intent);
     }

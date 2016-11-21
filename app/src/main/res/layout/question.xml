@@ -9,54 +9,66 @@
 
     <TextView
         android:id="@+id/tv_question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:padding="8dp"
-        android:textColor="#ffffff"
-        android:textStyle="bold" />
+        style="@style/Question" />
 
-    <RadioGroup
-        android:id="@+id/radiogroup_options"
+    <View
+        android:id="@+id/sep1"
         android:layout_below="@id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_below="@id/sep1"
+        style="@style/Option"/>
+
+    <View
+        android:id="@+id/sep2"
+        android:layout_below="@id/option1"
+        style="@style/Separator" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_below="@id/sep2"
+        style="@style/Option"/>
+
+    <View
+        android:id="@+id/sep3"
+        android:layout_below="@id/option2"
+        style="@style/Separator" />
+
+    <TextView
+        android:id="@+id/option3"
+        android:layout_below="@id/sep3"
+        style="@style/Option"/>
+
+    <View
+        android:id="@+id/sep4"
+        android:layout_below="@id/option3"
+        style="@style/Separator" />
+
+    <TextView
+        android:id="@+id/option4"
+        android:layout_below="@id/sep4"
+        style="@style/Option"/>
+
+    <View
+        android:id="@+id/sep5"
+        android:layout_below="@id/option4"
+        style="@style/Separator" />
+
+    <TextView
+        android:id="@+id/option5"
+        android:layout_below="@id/sep5"
+        style="@style/Option"/>
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:orientation="vertical">
-        <RadioButton
-            android:id="@+id/option1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/harvard"/>
-        <RadioButton
-            android:id="@+id/option2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stanford" />
-        <RadioButton
-            android:id="@+id/option3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/berkeley" />
-        <RadioButton
-            android:id="@+id/option4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/yale" />
-        <RadioButton
-            android:id="@+id/option5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/princeton" />
-    </RadioGroup>
+        android:textAlignment="center"
+        android:textSize="18sp"/>
 
-    <Button
-        android:id="@+id/bt_next"
-        android:layout_below="@id/radiogroup_options"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:background="@color/colorAccent"
-        android:textColor="#ffffff"
-        android:text="@string/next" />
 </RelativeLayout>
