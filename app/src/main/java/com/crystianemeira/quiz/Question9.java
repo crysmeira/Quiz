@@ -57,6 +57,11 @@ public class Question9 extends AppCompatActivity {
         }
     }
 
+    /**
+     * Method that calls the next question
+     *
+     * @param points how many points the user has until this point
+     */
     private void callNext(int points) {
         Intent intent = new Intent(Question9.this, Question10.class);
         intent.putExtra("points", points);

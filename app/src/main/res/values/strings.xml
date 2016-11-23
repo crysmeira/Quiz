@@ -67,5 +67,5 @@
     <string name="finish">Congratulations! You finished the test.</string>
     <string name="result">Quiz result</string>
     <string name="out_of_10">out of 10</string>
-    <string name="share">Share this result</string>
+    <string name="share">Share this result (e-mail)</string>
 </resources>
